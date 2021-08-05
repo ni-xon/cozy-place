@@ -1,27 +1,83 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-AU">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
-        <title>The Little Laundromat</title>
-    </head>
-    <body>
-        <main class="main-content">
-            <div class="section1">
-                <header id="app-title">
-                    <h1>The Little 
-                        <br>Laundromat
-                    </h1>
-                </header>
-                <iframe src="https://open.spotify.com/embed/playlist/6dt9R9Knfn5Jns2szsox27?theme=0" width="20%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/index.js') }}"
+    ></script>
+    <title>The Little Laundromat</title>
+    <script
+      src="https://kit.fontawesome.com/fe3889e50c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="section1">
+        <header id="app-title">
+          <h1>The Little <br />Laundromat</h1>
+        </header>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/6dt9R9Knfn5Jns2szsox27?theme=0"
+          width="20%"
+          height="80"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+      <div class="section2">
+        <img src="/static/TLL.svg" />
+      </div>
+      <div class="section3">
+        <div class="sound-sliders-container">
+          <div class="slider-container">
+            <audio
+              id="rain"
+              src="{{ url_for('static', filename='rain.mp3') }}"
+              loop
+            ></audio>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+            <div class="volume-container">
+              <input type="range" class="volume-control" />
             </div>
-            <div class="section2">
-                <img src="/static/TLL.svg">
-            </div>
-            <div class="section3">
-                <div class="square"></div>
-            </div>
-        </main>
+            <i class="fas fa-cloud-showers-heavy"></i>
+          </div>
 
-    </body>
+          <div class="slider-container">
+            <audio
+              id="sunny"
+              src="{{ url_for('static', filename='sunny.mp3') }}"
+              loop
+            ></audio>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+            <div class="volume-container">
+              <input type="range" class="volume-control" />
+            </div>
+            <i class="fas fa-sun"></i>
+          </div>
+
+          <div class="slider-container">
+            <audio
+              id="laundromat"
+              src="{{ url_for('static', filename='laundromat.mp3') }}"
+              loop
+            ></audio>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+            <div class="volume-container">
+              <input type="range" class="volume-control" />
+            </div>
+            <i class="fas fa-store-alt"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

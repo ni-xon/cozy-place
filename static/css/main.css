@@ -1,62 +1,134 @@
 /* REMOVING THE DEFAULT STYLINGS */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 header {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
-    text-align: center;
-} 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
 
 body {
-    background-color: #F5EEDF;
+  background-color: #f5eedf;
 }
 
 /* SPOTIFY EMBEDDING */
 iframe {
-    position: fixed;
-    bottom: 200px;
-    border-radius: 15px;
+  position: fixed;
+  bottom: 200px;
+  border-radius: 15px;
 }
 
 /* FLEXBOX CONTENT */
 .main-content {
-    height: 97vh;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.section1, .section2, .section3 {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    margin: 1%;
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 1%;
 }
 
 .section1 {
-    width: 27%;
+  width: 27%;
 }
 
 .section2 {
-    align-items: center;
-    width: 40%;
+  align-items: center;
+  width: 40%;
 }
 
 .section3 {
-    width: 27%;
+  width: 27%;
 }
 
-.square {
-    height: 50px;
-    width: 50px;
-    background-color: #555;
-  }
+/* SOUND SLIDERS */
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.fa-cloud-showers-heavy,
+.fa-sun,
+.fa-store-alt {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+.fa-store-alt {
+  font-size: 26px;
+}
+
+.fa-play,
+.fa-pause {
+  font-size: 16px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  width: 230px;
+}
+
+.volume-container {
+  display: flex;
+}
+
+/* DISABLING POINTER EVENTS FOR ICONS TO ALLOW FOR PROPER BUTTON CLICK */
+.fa-play,
+.fa-pause {
+  pointer-events: none;
+}
+
+/* STYLING FOR INPUT RANGE SLIDERS */
+/* CHROME, OPERA, SAFARI  */
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: black;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  outline: 2px solid #f5eedf;
+  border-radius: 50%;
+  background: black;
+  margin-top: -5px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: black;
+}
