@@ -11,6 +11,7 @@
     <script
       type="text/javascript"
       src="{{ url_for('static', filename='js/index.js') }}"
+      defer
     ></script>
     <title>The Little Laundromat</title>
     <script
@@ -34,17 +35,16 @@
         ></iframe>
       </div>
       <div class="section2">
-        <img src="/static/TLL.svg" />
+        <img src="{{ url_for('static', filename='TLL.svg') }}" />
       </div>
       <div class="section3">
         <div class="sound-sliders-container">
           <div class="slider-container">
-            <audio id="rain" loop>
-              <source
-                src="{{ url_for('static', filename='rain.mp3') }}"
-                type="file/mp3"
-              />
-            </audio>
+            <audio
+              id="rain"
+              src="{{ url_for('static', filename='rain.mp3') }}"
+              loop
+            ></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
@@ -53,12 +53,11 @@
           </div>
 
           <div class="slider-container">
-            <audio id="sunny" loop>
-              <source
-                src="{{ url_for('static', filename='sunny.mp3') }}"
-                type="file/mp3"
-              />
-            </audio>
+            <audio
+              id="sunny"
+              src="{{ url_for('static', filename='sunny.mp3') }}"
+              loop
+            ></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
@@ -67,12 +66,11 @@
           </div>
 
           <div class="slider-container">
-            <audio id="laundromat" loop>
-              <source
-                src="{{ url_for('static', filename='laundromat.mp3') }}"
-                type="file/mp3"
-              />
-            </audio>
+            <audio
+              id="laundromat"
+              src="{{ url_for('static', filename='laundromat.mp3') }}"
+              loop
+            ></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
