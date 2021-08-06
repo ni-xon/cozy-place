@@ -10,11 +10,20 @@
     />
     <link
       rel="stylesheet"
+      href="{{ url_for('static', filename='css/timer.css') }}"
+    />
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename='css/sliders.css') }}"
     />
     <script
       type="text/javascript"
-      src="{{ url_for('static', filename='js/index.js') }}"
+      src="{{ url_for('static', filename='js/timer.js') }}"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/sliders.js') }}"
       defer
     ></script>
     <title>The Little Laundromat</title>
@@ -32,6 +41,31 @@
       </div>
       <div class="section2">
         <img src="{{ url_for('static', filename='TLL.svg') }}" />
+
+        <div class="timer">
+          <div class="mode-buttons" id="js-mode-buttons">
+            <button data-mode="pomodoro" class="mode-button active">
+              Pomodoro
+            </button>
+            <button data-mode="shortBreak" class="mode-button">
+              Short break
+            </button>
+            <button data-mode="longBreak" class="mode-button">
+              Long break
+            </button>
+          </div>
+          <div class="clock">
+            <span></span>
+            <span id="js-minutes">25</span>
+            <span id="js-separator">:</span>
+            <span id="js-seconds">00</span>
+          </div>
+          <div class="button-container">
+            <button class="main-button" data-action="start" id="js-btn">
+              START
+            </button>
+          </div>
+        </div>
       </div>
       <div class="section3">
         <div class="sound-sliders-container">
