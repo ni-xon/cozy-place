@@ -10,6 +10,10 @@
     />
     <link
       rel="stylesheet"
+      href="{{ url_for('static', filename='css/task-list.css') }}"
+    />
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename='css/timer.css') }}"
     />
     <link
@@ -17,12 +21,14 @@
       href="{{ url_for('static', filename='css/sliders.css') }}"
     />
     <script
-      type="text/javascript"
+      src="{{ url_for('static', filename='js/task-list.js') }}"
+      defer
+    ></script>
+    <script
       src="{{ url_for('static', filename='js/timer.js') }}"
       defer
     ></script>
     <script
-      type="text/javascript"
       src="{{ url_for('static', filename='js/sliders.js') }}"
       defer
     ></script>
@@ -38,6 +44,23 @@
         <header id="app-title">
           <h1>The Little <br />Laundromat</h1>
         </header>
+
+        <div class="task-list">
+          <!-- FORM FOR TASK ENTRY -->
+          <form class="user-input">
+            <input
+              type="text"
+              placeholder="What are you getting done today?"
+              class="task-input"
+            />
+            <input class="add-task-button" type="submit" value="Add" />
+          </form>
+        </div>
+
+        <!-- DIV CONTAINER FOR TASK LIST -->
+        <div class="task-list-container">
+          <ul class="task-list"></ul>
+        </div>
       </div>
       <div class="section2">
         <img src="{{ url_for('static', filename='TLL.svg') }}" />

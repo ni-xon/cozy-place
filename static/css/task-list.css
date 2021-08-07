@@ -1,0 +1,101 @@
+form {
+  display: flex;
+  justify-content: center;
+}
+
+/* STYLING USER INPUT */
+form {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.task-input {
+  width: 380px;
+  height: 30px;
+  font-size: 18px;
+  border: 0;
+  padding: 10px 10px 10px 0px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+.task-input:focus {
+  outline: none;
+}
+
+.add-task-button {
+  width: 50px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* STYLING TASK LIST */
+.task-list-container {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* REMOVE BULLET POINTS AND SET DEFAULT WIDTH OF TASK-LIST */
+.task-list {
+  list-style: none;
+  padding: 0;
+  min-width: 450px;
+}
+
+/* STYLING EACH DIV */
+.task-list > div {
+  margin: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* GROW TASK TEXT TO FILL DIV */
+.task-list li {
+  flex-grow: 1;
+}
+
+/* STYLING DONE TASKS */
+.doneItem {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* DISABLING POINTER EVENTS FOR ICONS TO ALLOW FOR PROPER BUTTON CLICK */
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+/* STYLING BUTTONS  */
+.done-btn,
+.delete-btn {
+  padding: 8px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-btn {
+  color: red;
+}
+
+.done-btn {
+  color: green;
+}
+
+.done-btn:active {
+  background: green;
+}
+
+.delete-btn:active {
+  background: #b65337;
+}
