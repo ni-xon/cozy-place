@@ -1,6 +1,6 @@
 // Timer object to keep track of duration, minutes and seconds
 const timer = {
-  pomodoro: 1,
+  pomodoro: 25,
   shortBreak: 5,
   longBreak: 15,
   longBreakInterval: 4,
