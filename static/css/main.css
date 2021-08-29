@@ -49,8 +49,7 @@ iframe {
 
 .section2 {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   width: 40%;
 }
 

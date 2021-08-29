@@ -1,6 +1,6 @@
 // Timer object to keep track of duration, minutes and seconds
 const timer = {
-  pomodoro: 25,
+  pomodoro: 1,
   shortBreak: 5,
   longBreak: 15,
   longBreakInterval: 4,
@@ -14,7 +14,7 @@ const modeButtons = document.querySelector("#js-mode-buttons");
 modeButtons.addEventListener("click", handleMode);
 
 // START/STOP BUTTON
-const buttonSound = new Audio("/assets/button-sound.mp3");
+const buttonSound = new Audio("static/button-sound.mp3");
 const mainButton = document.querySelector(".main-button");
 mainButton.addEventListener("click", () => {
   buttonSound.play();
@@ -94,7 +94,7 @@ function startTimer() {
         default:
           switchMode("pomodoro");
       }
-      const doneSound = new Audio("/assets/done.mp3");
+      const doneSound = new Audio("static/done.mp3");
       doneSound.play();
       startTimer();
     }

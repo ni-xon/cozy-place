@@ -12,6 +12,7 @@ form {
 .task-list-container {
   width: 95%;
   margin-top: 30%;
+  padding: 10px;
 }
 
 .task-input {

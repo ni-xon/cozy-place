@@ -1,7 +1,11 @@
 .timer {
   margin: 20px;
+  padding: 20px;
   top: 100px;
   position: absolute;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px 5px;
 }
 
 .clock {
