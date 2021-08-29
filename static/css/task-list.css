@@ -49,11 +49,11 @@ form {
 /* STYLING EACH DIV */
 .task-list > div {
   margin: 10px;
-  background: white;
+  background: transparent;
   display: flex;
   align-items: center;
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid transparent;
   border-radius: 5px;
 }
 
@@ -78,7 +78,7 @@ form {
 .done-btn,
 .delete-btn {
   padding: 8px;
-  background: white;
+  background: transparent;
   border: none;
   cursor: pointer;
   font-size: 16px;
