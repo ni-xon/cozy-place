@@ -9,35 +9,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
-    <link
-      rel="stylesheet"
-      href="css/main.css"
-    />
-    <link
-      rel="stylesheet"
-      href="css/task-list.css"
-    />
-    <link
-      rel="stylesheet"
-      href="css/timer.css"
-    />
-    <link
-      rel="stylesheet"
-      href="css/sliders.css"
-    />
-    <script
-      src="js/task-list.js"
-      defer
-    ></script>
-    <script
-      src="js/timer.js"
-      defer
-    ></script>
-    <script
-      src="js/sliders.js"
-      defer
-    ></script>
-    <title>The Little Laundromat</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/task-list.css" />
+    <link rel="stylesheet" href="css/timer.css" />
+    <link rel="stylesheet" href="css/sliders.css" />
+    <script src="js/task-list.js" defer></script>
+    <script src="js/timer.js" defer></script>
+    <script src="js/sliders.js" defer></script>
+    <title>Cozy Place</title>
     <script
       src="https://kit.fontawesome.com/fe3889e50c.js"
       crossorigin="anonymous"
@@ -47,7 +26,7 @@
     <main class="main-content">
       <div class="section1">
         <header id="app-title">
-          <h1>The Little <br />Laundromat</h1>
+          <h1>Cozy Place</h1>
         </header>
         <!-- DIV CONTAINER FOR TASK LIST -->
         <div class="task-list-container">
@@ -64,8 +43,6 @@
         </div>
       </div>
       <div class="section2">
-        <!-- <img src="{{ url_for('static', filename='TLL.svg') }}" /> -->
-
         <div class="timer">
           <div class="mode-buttons" id="js-mode-buttons">
             <button data-mode="pomodoro" class="mode-button active">
@@ -94,11 +71,7 @@
       <div class="section3">
         <div class="sound-sliders-container">
           <div class="slider-container">
-            <audio
-              id="rain"
-              src="audio/rain.mp3"
-              loop
-            ></audio>
+            <audio id="rain" src="audio/rain.mp3" loop></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
@@ -107,11 +80,7 @@
           </div>
 
           <div class="slider-container">
-            <audio
-              id="sunny"
-              src="audio/sunny.mp3"
-              loop
-            ></audio>
+            <audio id="sunny" src="audio/sunny.mp3" loop></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
@@ -120,11 +89,7 @@
           </div>
 
           <div class="slider-container">
-            <audio
-              id="laundromat"
-              src="audio/laundromat.mp3"
-              loop
-            ></audio>
+            <audio id="laundromat" src="audio/laundromat.mp3" loop></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
