@@ -1,4 +1,4 @@
-# The Little Laundromat (Work in Progress)
-Productivity web application with Pomodoro timer, task list and music functionality, designed to mimic the feel of a laundromat environment.
+# Cozy Place (Work in Progress)
+A place to work and relax to lofi. Features a pomodoro timer, task list and adjustable weather sound effects.
 
 Access application at: https://ni-xon.github.io/the-little-laundromat/
