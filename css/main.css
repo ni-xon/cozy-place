@@ -58,15 +58,20 @@ body {
 
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   height: 50px;
   padding: 10px;
 }
 
 ul {
   display: flex;
-  justify-content: center;
-  gap: 10%;
+  justify-content: flex-start;
+  gap: 1%;
   list-style: none;
   padding: 0;
+  flex: 1;
+}
+
+.button-container {
+  margin-left: auto;
 }
