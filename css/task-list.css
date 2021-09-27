@@ -1,10 +1,7 @@
+/* STYLING USER INPUT */
 form {
   display: flex;
   justify-content: center;
-}
-
-/* STYLING USER INPUT */
-form {
   margin-bottom: 40px;
   margin-top: 40px;
   font-size: 18px;
@@ -35,6 +32,7 @@ form {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
+  border: 1px solid var(--text-color);
 }
 
 /* REMOVE BULLET POINTS AND SET DEFAULT WIDTH OF TASK-LIST */
