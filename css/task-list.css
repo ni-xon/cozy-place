@@ -10,9 +10,9 @@ form {
   font-size: 18px;
 }
 .task-list-container {
-  width: 95%;
-  margin-top: 30%;
+  width: 90%;
   padding: 10px;
+  flex: 1;
 }
 
 .task-input {
@@ -39,9 +39,10 @@ form {
 
 /* REMOVE BULLET POINTS AND SET DEFAULT WIDTH OF TASK-LIST */
 .task-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
-  width: 95%;
 }
 
 /* STYLING EACH DIV */
@@ -83,17 +84,17 @@ form {
 }
 
 .delete-btn {
-  color: red;
+  color: var(--text-color);
 }
 
 .done-btn {
-  color: green;
+  color: var(--text-color);
 }
 
 .done-btn:active {
-  background: green;
+  background: var(--bg-color);
 }
 
 .delete-btn:active {
-  background: #b65337;
+  background: var(--bg-color);
 }

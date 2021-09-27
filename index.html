@@ -4,31 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS SHEETS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/task-list.css" />
+    <link rel="stylesheet" href="css/timer.css" />
+    <link rel="stylesheet" href="css/sliders.css" />
+    <!-- JAVASCRIPT -->
+    <script src="js/task-list.js" defer></script>
+    <script src="js/timer.js" defer></script>
+    <script src="js/sliders.js" defer></script>
+    <title>Cozy Place</title>
     <!-- Google Fonts API -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/task-list.css" />
-    <link rel="stylesheet" href="css/timer.css" />
-    <link rel="stylesheet" href="css/sliders.css" />
-    <script src="js/task-list.js" defer></script>
-    <script src="js/timer.js" defer></script>
-    <script src="js/sliders.js" defer></script>
-    <title>Cozy Place</title>
+    <!-- ICONS API -->
     <script
       src="https://kit.fontawesome.com/fe3889e50c.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <main class="main-content">
+    <div class="main-content">
       <div class="section1">
-        <header id="app-title">
-          <h1>Cozy Place</h1>
-        </header>
-        <!-- DIV CONTAINER FOR TASK LIST -->
+        <h1>Cozy Place</h1>
+        <!-- TASK LIST CONTAINER-->
         <div class="task-list-container">
           <!-- FORM FOR TASK ENTRY -->
           <form class="user-input">
@@ -42,7 +45,9 @@
           <ul class="task-list"></ul>
         </div>
       </div>
-      <div class="section2">
+      <div class="section2"></div>
+      <div class="section3">
+        <!-- POMODORO TIMER -->
         <div class="timer">
           <div class="mode-buttons" id="js-mode-buttons">
             <button data-mode="pomodoro" class="mode-button active">
@@ -67,11 +72,11 @@
             </button>
           </div>
         </div>
-      </div>
-      <div class="section3">
+
+        <!-- SOUND SLIDERS -->
         <div class="sound-sliders-container">
           <div class="slider-container">
-            <audio id="rain" src="audio/rain.mp3" loop></audio>
+            <audio id="rain" src="audio/rain.wav" loop></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
@@ -80,7 +85,7 @@
           </div>
 
           <div class="slider-container">
-            <audio id="sunny" src="audio/sunny.mp3" loop></audio>
+            <audio id="fireplace" src="audio/fireplace.wav" loop></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
@@ -89,7 +94,7 @@
           </div>
 
           <div class="slider-container">
-            <audio id="laundromat" src="audio/laundromat.mp3" loop></audio>
+            <audio id="storm" src="audio/storm.wav" loop></audio>
             <button class="play-button"><i class="fas fa-play"></i></button>
             <div class="volume-container">
               <input type="range" class="volume-control" />
@@ -97,16 +102,15 @@
             <i class="fas fa-store-alt"></i>
           </div>
         </div>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/6dt9R9Knfn5Jns2szsox27?theme=0"
-          width="300"
-          height="380"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
       </div>
-    </main>
+    </div>
+    <div class="footer">
+      <ul>
+        <li><a href="#">Link1</a></li>
+        <li><a href="#">Link2</a></li>
+        <li><a href="#">Link3</a></li>
+        <li><a href="#">Link4</a></li>
+      </ul>
+    </div>
   </body>
 </html>

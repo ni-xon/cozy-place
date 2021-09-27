@@ -3,9 +3,9 @@ const playButtons = document.querySelectorAll(".play-button");
 playButtons.forEach((playButton) => (playButton.state = "pause"));
 
 const rainAudio = document.querySelector("#rain");
-const sunnyAudio = document.querySelector("#sunny");
-const laundromatAudio = document.querySelector("#laundromat");
-const audioList = [rainAudio, sunnyAudio, laundromatAudio];
+const fireplaceAudio = document.querySelector("#fireplace");
+const stormAudio = document.querySelector("#storm");
+const audioList = [rainAudio, fireplaceAudio, stormAudio];
 const volumeSliders = document.querySelectorAll(".volume-control");
 
 // Add event listener to each play button for play/pause functionality
