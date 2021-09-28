@@ -16,6 +16,8 @@
 h1 {
   font-size: 56px;
   margin-top: 10%;
+  padding-left: 30px;
+  align-self: flex-start;
 }
 
 body {
@@ -41,7 +43,7 @@ body {
 
 .section1 {
   align-items: center;
-  gap: 10%;
+  gap: 5%;
 }
 
 .section2 {
