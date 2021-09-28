@@ -142,6 +142,10 @@ ul {
   .section2 {
     display: none;
   }
+
+  #spotify-embed {
+    width: 75%;
+  }
 }
 @media only screen and (max-width: 480px) {
   .fa-moon,
