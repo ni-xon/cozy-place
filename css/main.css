@@ -80,9 +80,26 @@ ul {
   border: 1px solid var(--text-color);
   padding: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /* ICONS */
 .fa-spotify {
+  pointer-events: none;
+}
+
+.spotify-button {
   font-size: 200%;
+  border: none;
+  cursor: pointer;
+}
+
+/* SPOTIFY EMBED */
+#spotify-embed {
+  display: inline-block;
+  position: absolute;
+  width: 25%;
+  bottom: 50px;
+  left: 10px;
+  border-radius: 10px;
 }

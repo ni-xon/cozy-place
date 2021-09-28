@@ -1,6 +1,8 @@
 // DARK MODE BUTTON
 const root = document.querySelector("html");
 const darkModeButton = document.getElementById("theme-button");
+const spotifyButton = document.querySelector(".spotify-button");
+const spotifyEmbed = document.getElementById("spotify-embed");
 
 darkModeButton.addEventListener("click", () => {
   root.classList.toggle("dark-mode");
@@ -12,5 +14,14 @@ darkModeButton.addEventListener("click", () => {
     darkModeButton.textContent = "Dark Mode";
     root.style.setProperty("--bg-color", "white");
     root.style.setProperty("--text-color", "black");
+  }
+});
+
+spotifyButton.addEventListener("click", () => {
+  root.classList.toggle("spotifyPlaylistDisplayed");
+  if (root.classList.contains("spotifyPlaylistDisplayed")) {
+    spotifyEmbed.style.setProperty("display", "inline-block");
+  } else if (!root.classList.contains("spotifyPlaylistDisplayed")) {
+    spotifyEmbed.style.setProperty("display", "none");
   }
 });
