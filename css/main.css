@@ -111,7 +111,6 @@ ul {
 
 .fa-moon,
 .fa-sun {
-  display: block;
   box-sizing: border-box;
   background-color: transparent;
   color: var(--text-color);
@@ -136,20 +135,12 @@ ul {
 }
 
 /* MEDIA QUERIES TO REMOVE SUN/MOON ICONS FOR PHONE DISPLAYS */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+  /* Hides the sun and moon icons on mobile */
   .fa-moon,
-  .fa-sun,
-  .section2 {
-    display: none;
+  .fa-sun {
+    z-index: -1;
   }
-
-  #spotify-embed {
-    width: 75%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .fa-moon,
-  .fa-sun,
   .section2 {
     display: none;
   }
