@@ -26,6 +26,7 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   padding: 10px;
+  overflow: hidden;
 }
 
 .main-content {
@@ -111,8 +112,8 @@ ul {
 
 .fa-moon,
 .fa-sun {
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
   background-color: transparent;
   color: var(--text-color);
   font-size: 1000%;
@@ -136,13 +137,13 @@ ul {
 }
 
 /* MEDIA QUERIES TO REMOVE SUN/MOON ICONS FOR PHONE DISPLAYS */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .fa-moon,
   .fa-sun {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .fa-moon,
   .fa-sun {
     display: none;
