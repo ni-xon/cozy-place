@@ -26,7 +26,6 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   padding: 10px;
-  overflow: hidden;
 }
 
 .main-content {
@@ -120,7 +119,7 @@ ul {
   border: none;
   /* POSITION */
   width: 155px;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -137,15 +136,17 @@ ul {
 }
 
 /* MEDIA QUERIES TO REMOVE SUN/MOON ICONS FOR PHONE DISPLAYS */
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .fa-moon,
-  .fa-sun {
+  .fa-sun,
+  .section2 {
     display: none;
   }
 }
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .fa-moon,
-  .fa-sun {
+  .fa-sun,
+  .section2 {
     display: none;
   }
 }
