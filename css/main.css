@@ -75,3 +75,14 @@ ul {
 .button-container {
   margin-left: auto;
 }
+
+#theme-button {
+  border: 1px solid var(--text-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* ICONS */
+.fa-spotify {
+  font-size: 200%;
+}
