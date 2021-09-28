@@ -20,6 +20,18 @@
   font-size: 30px;
 }
 
+.fa-cloud-showers-heavy {
+  color: rgb(62, 62, 245);
+}
+
+.fa-fire {
+  color: orange;
+}
+
+.fa-wind {
+  color: grey;
+}
+
 .fa-store-alt {
   font-size: 26px;
 }
