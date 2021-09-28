@@ -96,7 +96,7 @@ ul {
 
 /* SPOTIFY EMBED */
 #spotify-embed {
-  display: inline-block;
+  display: none;
   position: absolute;
   width: 25%;
   bottom: 50px;

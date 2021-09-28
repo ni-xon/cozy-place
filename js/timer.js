@@ -14,7 +14,7 @@ const modeButtons = document.querySelector("#js-mode-buttons");
 modeButtons.addEventListener("click", handleMode);
 
 // START/STOP BUTTON
-const buttonSound = new Audio("audio/button-sound.mp3");
+const buttonSound = new Audio("audio/button-sound.wav");
 const mainButton = document.querySelector(".main-button");
 mainButton.addEventListener("click", () => {
   buttonSound.play();
@@ -94,7 +94,7 @@ function startTimer() {
         default:
           switchMode("pomodoro");
       }
-      const doneSound = new Audio("audio/done.mp3");
+      const doneSound = new Audio("audio/done.wav");
       doneSound.play();
       startTimer();
     }
