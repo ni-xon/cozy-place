@@ -29,6 +29,7 @@ body {
 
 .main-content {
   display: flex;
+  flex-wrap: wrap-reverse;
   flex: 1;
 }
 
