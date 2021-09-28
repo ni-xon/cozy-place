@@ -108,3 +108,43 @@ ul {
   left: 10px;
   border-radius: 10px;
 }
+
+.fa-moon,
+.fa-sun {
+  box-sizing: border-box;
+  display: block;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 1000%;
+  border: none;
+  /* POSITION */
+  width: 155px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 1.5s;
+}
+
+.fa-moon {
+  bottom: -40vh;
+}
+
+.fa-sun {
+  bottom: 70vh;
+}
+
+/* MEDIA QUERIES TO REMOVE SUN/MOON ICONS FOR PHONE DISPLAYS */
+@media (max-width: 767px) {
+  .fa-moon,
+  .fa-sun {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .fa-moon,
+  .fa-sun {
+    display: none;
+  }
+}
