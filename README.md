@@ -1,4 +1,11 @@
-# Home
-A place to work and relax to lofi. Features a pomodoro timer, task list and adjustable weather sound effects.
+# Home 🏠
+A place to work and relax to lofi and weather sounds.
 
-Access application at: https://ni-xon.github.io/home/
+## Features:
+- pomodoro timer
+- task list
+- adjustable weather sound effects
+- dark theme/light theme
+- spotify playlist integration
+
+**Please enjoy home <a href="https://ni-xon.github.io/home/" target="_blank">here.</a>**
