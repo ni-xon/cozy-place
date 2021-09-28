@@ -90,7 +90,8 @@ ul {
   pointer-events: none;
 }
 
-.spotify-button {
+.spotify-button,
+.github-button {
   font-size: 200%;
   border: none;
   cursor: pointer;
