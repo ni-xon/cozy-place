@@ -93,7 +93,8 @@ ul {
 }
 
 .spotify-button,
-.github-button {
+.github-button,
+.youtube-button {
   font-size: 200%;
   border: none;
   cursor: pointer;
@@ -104,6 +105,15 @@ ul {
   display: none;
   position: absolute;
   width: 25%;
+  bottom: 50px;
+  left: 10px;
+  border-radius: 10px;
+}
+
+#youtube-embed {
+  display: none;
+  position: absolute;
+  width: 35%;
   bottom: 50px;
   left: 10px;
   border-radius: 10px;
@@ -147,5 +157,9 @@ ul {
 
   #spotify-embed {
     width: 75%;
+  }
+
+  #youtube-embed {
+    width: 95%;
   }
 }

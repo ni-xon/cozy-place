@@ -1,8 +1,10 @@
 // DARK MODE BUTTON
 const root = document.querySelector("html");
-const darkModeButton = document.getElementById("theme-button");
+const darkModeButton = document.querySelector("#theme-button");
 const spotifyButton = document.querySelector(".spotify-button");
-const spotifyEmbed = document.getElementById("spotify-embed");
+const spotifyEmbed = document.querySelector("#spotify-embed");
+const youtubeButton = document.querySelector(".youtube-button");
+const youtubeEmbed = document.querySelector("#youtube-embed");
 
 const moonIcon = document.querySelector(".fa-moon");
 const sunIcon = document.querySelector(".fa-sun");
@@ -30,5 +32,14 @@ spotifyButton.addEventListener("click", () => {
     spotifyEmbed.style.setProperty("display", "inline-block");
   } else if (!root.classList.contains("spotifyPlaylistDisplayed")) {
     spotifyEmbed.style.setProperty("display", "none");
+  }
+});
+
+youtubeButton.addEventListener("click", () => {
+  root.classList.toggle("youtubePlaylistDisplayed");
+  if (root.classList.contains("youtubePlaylistDisplayed")) {
+    youtubeEmbed.style.setProperty("display", "block");
+  } else if (!root.classList.contains("youtubePlaylistDisplayed")) {
+    youtubeEmbed.style.setProperty("display", "none");
   }
 });
