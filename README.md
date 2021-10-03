@@ -1,5 +1,7 @@
 # Home 🏠
-A place to work, relax to lofi and weather sounds.
+A place to work, relax to lofi and weather sounds. 
+
+**Please enjoy home <a href="https://ni-xon.github.io/home/" target="_blank">here.</a>**
 
 ## Features:
 - pomodoro timer
@@ -15,6 +17,3 @@ A place to work, relax to lofi and weather sounds.
 
 ### Dark Mode
 ![image](https://user-images.githubusercontent.com/57848315/135760845-681845f5-e086-471b-87ca-ace45e715798.png)
-
-
-**Please enjoy home <a href="https://ni-xon.github.io/home/" target="_blank">here.</a>**
