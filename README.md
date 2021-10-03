@@ -1,5 +1,5 @@
 # Home 🏠
-A place to work and relax to lofi and weather sounds.
+A place to work, relax to lofi and weather sounds.
 
 ## Features:
 - pomodoro timer
