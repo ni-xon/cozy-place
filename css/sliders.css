@@ -54,6 +54,7 @@
 /* SET LENGTH OF RUNNABLE TRACK */
 .volume-control {
   width: 235px;
+  padding-top: 2.3px;
 }
 
 /* DISABLING POINTER EVENTS FOR ICONS TO ALLOW FOR PROPER BUTTON CLICK */
