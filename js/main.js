@@ -30,6 +30,11 @@ spotifyButton.addEventListener("click", () => {
   root.classList.toggle("spotifyPlaylistDisplayed");
   if (root.classList.contains("spotifyPlaylistDisplayed")) {
     spotifyEmbed.style.setProperty("display", "inline-block");
+    // If youtube playlist is displayed toggle it off
+    if (root.classList.contains("youtubePlaylistDisplayed")) {
+      root.classList.toggle("youtubePlaylistDisplayed");
+      youtubeEmbed.style.setProperty("display", "none");
+    }
   } else if (!root.classList.contains("spotifyPlaylistDisplayed")) {
     spotifyEmbed.style.setProperty("display", "none");
   }
@@ -38,7 +43,12 @@ spotifyButton.addEventListener("click", () => {
 youtubeButton.addEventListener("click", () => {
   root.classList.toggle("youtubePlaylistDisplayed");
   if (root.classList.contains("youtubePlaylistDisplayed")) {
-    youtubeEmbed.style.setProperty("display", "block");
+    youtubeEmbed.style.setProperty("display", "inline-block");
+    // If spotify playlist is displayed toggle it off
+    if (root.classList.contains("spotifyPlaylistDisplayed")) {
+      root.classList.toggle("spotifyPlaylistDisplayed");
+      spotifyEmbed.style.setProperty("display", "none");
+    }
   } else if (!root.classList.contains("youtubePlaylistDisplayed")) {
     youtubeEmbed.style.setProperty("display", "none");
   }
