@@ -1,12 +1,33 @@
 const playButtons = document.querySelectorAll(".play-button");
 // Assigns a default pause state to each play button
 playButtons.forEach((playButton) => (playButton.state = "pause"));
-
-const rainAudio = document.querySelector("#rain");
-const fireplaceAudio = document.querySelector("#fireplace");
-const stormAudio = document.querySelector("#storm");
-const audioList = [rainAudio, fireplaceAudio, stormAudio];
 const volumeSliders = document.querySelectorAll(".volume-control");
+
+const sounds = {
+  rain: { src: "audio/rain.wav" },
+  fireplace: { src: "audio/fireplace.wav" },
+  storm: { src: "audio/storm.wav" },
+};
+
+// Setup the rain Howl
+const rain = new Howl({
+  src: [sounds.rain.src],
+  loop: true,
+});
+
+// Setup the fireplace Howl
+const fireplace = new Howl({
+  src: [sounds.fireplace.src],
+  loop: true,
+});
+
+// Setup the storm Howl
+const storm = new Howl({
+  src: [sounds.storm.src],
+  loop: true,
+});
+
+const audioList = [rain, fireplace, storm];
 
 // Add event listener to each play button for play/pause functionality
 for (let [index, playButton] of playButtons.entries()) {
@@ -30,6 +51,6 @@ for (let [index, playButton] of playButtons.entries()) {
 for (let [index, volumeSlider] of volumeSliders.entries()) {
   volumeSlider.addEventListener("change", function (event) {
     let audio = audioList[index];
-    audio.volume = event.currentTarget.value / 100;
+    audio.volume(event.currentTarget.value / 100);
   });
 }
