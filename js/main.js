@@ -15,14 +15,14 @@ darkModeList.forEach((element) => {
     root.classList.toggle("dark-mode");
     if (root.classList.contains("dark-mode")) {
       darkModeButton.textContent = "Light Mode";
-      root.style.setProperty("--bg-color", "black");
+      root.style.setProperty("--bg-color", "#121212");
       root.style.setProperty("--text-color", "white");
       sunIcon.style.transform = "translateY(110vh)";
       moonIcon.style.transform = "translateY(-110vh)";
     } else if (!root.classList.contains("dark-mode")) {
       darkModeButton.textContent = "Dark Mode";
       root.style.setProperty("--bg-color", "white");
-      root.style.setProperty("--text-color", "black");
+      root.style.setProperty("--text-color", "#121212");
       moonIcon.style.transform = "translateY(0vh)";
       sunIcon.style.transform = "translateY(0vh)";
     }
