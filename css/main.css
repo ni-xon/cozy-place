@@ -145,6 +145,29 @@ ul {
   bottom: 70vh;
 }
 
+h1 {
+  height: 56px;
+}
+/* Blinking Cursor */
+h1 span {
+  height: 56px;
+  margin-bottom: -4px;
+  width: 2px;
+  background: var(--text-color);
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* MEDIA QUERIES TO REMOVE SUN/MOON ICONS FOR PHONE DISPLAYS */
 @media only screen and (max-width: 768px) {
   /* Hides the sun and moon icons on mobile */
