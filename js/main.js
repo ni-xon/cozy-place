@@ -53,14 +53,14 @@ darkModeList.forEach((element) => {
     root.classList.toggle("dark-mode");
     if (root.classList.contains("dark-mode")) {
       darkModeButton.textContent = "Light Mode";
-      root.style.setProperty("--bg-color", "#121212");
+      root.style.setProperty("--bg-color", "#181818");
       root.style.setProperty("--text-color", "white");
       sunIcon.style.transform = "translateY(110vh)";
       moonIcon.style.transform = "translateY(-110vh)";
     } else if (!root.classList.contains("dark-mode")) {
       darkModeButton.textContent = "Dark Mode";
       root.style.setProperty("--bg-color", "white");
-      root.style.setProperty("--text-color", "#121212");
+      root.style.setProperty("--text-color", "#181818");
       moonIcon.style.transform = "translateY(0vh)";
       sunIcon.style.transform = "translateY(0vh)";
     }
@@ -108,7 +108,7 @@ listofPhrases.forEach((phrase) => {
   phrasesQueue.enqueue(phrase);
 });
 
-const timer = (ms) => new Promise((res) => setTimeout(res, ms));
+const clock = (ms) => new Promise((res) => setTimeout(res, ms));
 
 // Event listener for hover to play typewriter effect
 target.addEventListener("mouseenter", async function () {
@@ -126,7 +126,7 @@ async function backSpace(target, speed, phrasesQueue) {
   for (let i = originalWord.length; i >= 1; i--) {
     let currentText = String(target.childNodes[0].nodeValue);
     target.childNodes[0].nodeValue = currentText.substring(0, i);
-    await timer(speed);
+    await clock(speed);
   }
 
   let phraseToEnqueue = phrasesQueue.peek();
@@ -140,6 +140,6 @@ async function backSpace(target, speed, phrasesQueue) {
 async function typeOut(target, phrase, speed) {
   for (let i = 1; i < phrase.length + 1; i++) {
     target.childNodes[0].nodeValue = phrase.substring(0, i);
-    await timer(speed);
+    await clock(speed);
   }
 }

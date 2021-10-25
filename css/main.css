@@ -3,14 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", thin, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: "Roboto", thin, sans-serif;
+  transition: background-color 0.5s;
 }
 
 :root {
-  --bg-color: white;
-  --text-color: #121212;
+  --bg-color: #ecedeb;
+  --text-color: #181818;
 }
 
 h1 {
@@ -23,9 +24,12 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
   padding: 10px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s;
 }
 
 .main-content {
@@ -85,6 +89,9 @@ ul {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s;
 }
 
 /* ICONS */
@@ -98,6 +105,10 @@ ul {
   font-size: 200%;
   border: none;
   cursor: pointer;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s;
 }
 
 /* SPOTIFY EMBED */
